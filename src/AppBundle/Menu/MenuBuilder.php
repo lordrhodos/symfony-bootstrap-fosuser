@@ -59,7 +59,7 @@ class MenuBuilder
         $menu = $this->factory->createItem('root');
 
         if ($this->authorizationChecker->isGranted('IS_AUTHENTICATED_FULLY')) {
-            $menu->addChild('Profile', array('route' => 'fos_user_security_logout'))
+            $menu->addChild('Profile', array('route' => 'fos_user_profile_show'))
                 ->setAttribute('icon', 'fa fa-user');
             $menu->addChild('Logout', array('route' => 'fos_user_security_logout'))
                 ->setAttribute('icon', 'fa fa-unlock-alt');
