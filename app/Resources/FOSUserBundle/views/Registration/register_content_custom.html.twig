@@ -1,0 +1,34 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST"
+      class="fos_user_registration_register form-horizontal" novalidate="novalidate">
+
+	<div class="form-group">
+		{{ form_label(form.email, null, {'label_attr': {'class': 'col-sm-2'}}) }}
+		<div class="col-sm-10">
+			{{ form_widget(form.email) }}
+		</div>
+	</div>
+
+	<div class="form-group">
+		{{ form_label(form.username, null, {'label_attr': {'class': 'col-sm-2'}}) }}
+		<div class="col-sm-10">
+			{{ form_widget(form.username) }}
+		</div>
+	</div>
+
+	<div class="form-group">
+		{{ form_label(form.plainPassword, "", {'label_attr': {'class': 'col-sm-2'}}) }}
+		<div class="col-sm-10">
+			{{ form_widget(form.plainPassword) }}
+		</div>
+	</div>
+
+	{{ form_widget(form._token) }}
+
+	<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-10">
+			<input type="submit" value="{{ 'registration.submit'|trans }}"/>
+		</div>
+	</div>
+</form>
