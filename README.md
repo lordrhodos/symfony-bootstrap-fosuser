@@ -1,4 +1,4 @@
-# Symfony 2.7 project with support for Twitter Bootstrap 
+# Symfony 2.7 project with support for Twitter Bootstrap, FOSUserBundle and HWIOAuthBundle 
 
 
 This project is a skeleton for future projects integrating several third party libraries and bundles. 
