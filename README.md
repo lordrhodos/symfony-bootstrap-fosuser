@@ -14,7 +14,8 @@ Currently the following features are supported:
     * some secured items in the navigation as well as login and logout support
  * FOSUserBundle integration
     * main forms for login, registration, resetting password have been updated to bootstrap markup
-    
+ * HWIOAuthBundle integration allowing a login to the site with facebook and google accounts
+     * this is more a proof of concept, user account handling especially in regards of email vs. username creation needs to be implemented
  
 ## Integrated libraries and bundles
  
