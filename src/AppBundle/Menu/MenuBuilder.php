@@ -67,7 +67,7 @@ class MenuBuilder
 
             $menu->addChild('Login', array('route' => 'fos_user_security_login'))
                 ->setAttribute('icon', 'fa fa-lock');
-            $menu->addChild('Registrieren', array('route' => 'fos_user_registration_register'))
+            $menu->addChild('Register', array('route' => 'fos_user_registration_register'))
                 ->setAttribute('icon', 'fa fa-pencil-square-o');
         }
 
