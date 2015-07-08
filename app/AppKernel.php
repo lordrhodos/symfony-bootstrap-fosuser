@@ -19,7 +19,7 @@ class AppKernel extends Kernel
 	        new Braincrafted\Bundle\BootstrapBundle\BraincraftedBootstrapBundle(),
 	        new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new FOS\UserBundle\FOSUserBundle(),
-            // new HWI\Bundle\OAuthBundle\HWIOAuthBundle(),
+            new HWI\Bundle\OAuthBundle\HWIOAuthBundle(),
 	        new AppBundle\AppBundle(),
         );
 

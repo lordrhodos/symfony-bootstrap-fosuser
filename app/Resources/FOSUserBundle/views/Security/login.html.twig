@@ -35,4 +35,17 @@
 		</div>
 
 	</form>
+</div>
+<div class="col-sm-6">
+	<div class="featurette-divider">Or</div>
+
+	<div class="form-group">
+		<a href="{{ hwi_oauth_login_url('facebook') }}" class="btn btn-primary">Login with your Facebook account</a> <br/>
+	</div>
+	<div class="form-group">
+		<a href="{{ hwi_oauth_login_url('google') }}" class="btn btn-danger">Login with your Google account</a> <br/>
+	</div>
+
+	<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+	</fb:login-button>
 {% endblock fos_user_content %}

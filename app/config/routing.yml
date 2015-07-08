@@ -1,5 +1,15 @@
+hwi_oauth_redirect:
+    resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"
+    prefix:   /connect
+
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+facebook_login:
+    pattern: /login/check-facebook
+
+google_login:
+    pattern: /login/check-google
 
 app:
     resource: "@AppBundle/Controller/"
